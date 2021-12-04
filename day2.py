@@ -14,7 +14,7 @@ with open("data/day2.txt") as f:
         else:
             depth += value
 
-    print("Day2 - a")
+    print("Day 2 - a")
     print(depth * horizontal)
 
     horizontal = 0
@@ -33,5 +33,5 @@ with open("data/day2.txt") as f:
         else:
             aim += value
 
-    print("Day2 - b")
+    print("Day 2 - b")
     print(depth * horizontal)

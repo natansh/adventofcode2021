@@ -6,7 +6,7 @@ with open("data/day1.txt") as f:
     pairs = zip(numbers[:-1], numbers[1:])
     # List comprehensions used with conditions.
     increasing_count = sum([1 if y - x > 0 else 0 for (x, y) in pairs])
-    print("Day1 - a")
+    print("Day 1 - a")
     print(increasing_count)
 
     # For Part 2, the approach is similar, except we need to first build 3 item sequences, then get the sum of the
@@ -15,7 +15,7 @@ with open("data/day1.txt") as f:
     seq_sum = [x + y + z for (x, y, z) in sequences]
     seq_pairs = zip(seq_sum[:-1], seq_sum[1:])
     seq_increasing_count = sum([1 if y - x > 0 else 0 for (x, y) in seq_pairs])
-    print("Day1 - b")
+    print("Day 1 - b")
     print(seq_increasing_count)
 
     # Dirty, but efficient way -

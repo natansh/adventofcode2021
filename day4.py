@@ -72,15 +72,9 @@ def read_board_states(file):
     return board_states
 
 
-with open("data/day4_test.txt") as f:
-    numbers =
+with open("data/day4.txt") as file:
+    numbers = read_numbers(file)
     board_states = read_board_states(file)
-    while True:
-        line = f.readline()
-        if not line:
-            break
-        lines = [f.readline().rstrip() for i in range(5)]
-        board_states.append(build_board_state(lines))
 
     print("Day 4 - a")
     print(run_bingo(numbers, board_states))
